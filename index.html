@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="odin-photo">
@@ -28,28 +29,30 @@
         <h1>Let's do this!</h1>
         <ul>
           <li>
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name" />
+            <label for="first-name">First name </label>
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" minlength="1" maxlength="25" title="Please enter your first name" required />
           </li>
           <li>
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="last-name" />
+            <label for="last-name">Last name </label>
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" minlength="1" maxlength="25" title="Please enter your last name" required />
           </li>
           <li>
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" pattern="^[^ ]+@[^ ]+\.[a-z]{2,63}$" autocomplete="email" title="Please enter your email address" placeholder="email@example.com" required />
           </li>
           <li>
-            <label for="phone">Phone number</label>
-            <input type="tel" name="phone" id="phone" />
+            <label for="tel">Phone number</label>
+            <input type="tel" name="tel" id="tel" minlength="10" maxlength="12" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" autocomplete="tel" title="Please enter your phone number" placeholder="123-456-7890" required />
           </li>
           <li>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least 8 characters: one uppercase letter, one lowercase letter, and one number" required />
+            <span>Passwords do not match</span>
           </li>
           <li>
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password" />
+            <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least 8 characters: one uppercase letter, one lowercase letter, and one number" required />
+            <span id="error">*Passwords do not match</span>
           </li>
         </ul>
         <button>Create Account</button>
