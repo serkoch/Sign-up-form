@@ -63,6 +63,7 @@ body {
 
 .odin-photo a:link {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .odin-photo a:visited {
