@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign up</title>
-</head>
-<body>
-  <div>
-    <img src="./assets/odin-lined.png" alt="odin-logo" width="100px" height="100px">
-    <h1>ODIN</h1>
-    <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/person-riding-on-boat-on-sea-during-daytime-YkcCUJflVO4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-  </div>
-  <div>
-    <p>This is not a real inline service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-    <p>Sign up <em>now</em> to get started.</p>
-    <p>You <em>know</em> you want to.</p>
-    <form action="" method="post">
-      <h1>Let's do this!</h1>
-      <ul>
-        <li>
-          <label for="first-name">First name</label>
-          <input type="text" name="first-name" id="first-name">
-        </li>
-        <li>
-          <label for="last-name">Last name</label>
-          <input type="text" name="last-name" id="last-name">
-        </li>
-        <li>
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email">
-        </li>
-        <li>
-          <label for="phone">Phone number</label>
-          <input type="tel" name="phone" id="phone">
-        </li>
-        <li>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-        </li>
-        <li>
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" name="confirm-password" id="confirm-password">
-        </li>
-      </ul>
-      <button>Create Account</button>
-      <p>Already have an account? <a href="">Log in</a></p>
-    </form>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="odin-photo">
+      <div class="logo-text">
+        <h1><img src="./assets/odin-lined.png" alt="odin-logo"/>ODIN</h1>
+      </div>
+      <p>
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a>
+        on
+        <a href="https://unsplash.com/photos/person-riding-on-boat-on-sea-during-daytime-YkcCUJflVO4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+    </div>
+    <div class="form">
+      <div class="flavor-text">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+      </div>
+      <p>You <em>know</em> you want to.</p>
+      <form action="" method="post">
+        <h1>Let's do this!</h1>
+        <ul>
+          <li>
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </li>
+          <li>
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+          </li>
+          <li>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" />
+          </li>
+          <li>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </li>
+          <li>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" />
+          </li>
+        </ul>
+        <button>Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </form>
+    </div>
+  </body>
 </html>
